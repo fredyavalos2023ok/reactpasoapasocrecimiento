@@ -1,17 +1,21 @@
 import './App.css'
 export function App () {
     return (
-        <article >
-            <header>
-                <img alt="El avatar de midudev" src="https://unavatar.io/midudev" />
-                <div>
+        <article className='tw-followCard'>
+            <header className='tw-followCard-header'>
+                <img
+                className='tw-followCard-avatar' 
+                alt="El avatar de midudev" 
+                src="https://unavatar.io/midudev" />
+                <div className="tw-followCard-info">
                     <strong>Miguel Ángel Durán</strong>
-                    <span>@midudev</span>
+                    <span 
+                    className="tw-followCard-infoUserName">@midudev</span>
                 </div>
             </header>
 
             <aside>
-                <button>
+                <button className="tw-followCard-button">
                     Seguir
                 </button>
             </aside>
